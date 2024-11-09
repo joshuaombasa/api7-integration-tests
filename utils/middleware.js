@@ -26,7 +26,7 @@ const errorHandler = (error, request, response, next) => {
   }
   next()
 
-  // response.status(400).send({ errors: [{ message: 'Something wet wrong' }] })
+  response.status(400).send({ errors: [{ message: 'Something wet wrong' }] })
 }
 
 
